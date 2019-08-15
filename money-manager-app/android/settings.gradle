@@ -1,0 +1,3 @@
+rootProject.name = 'MoneyGo'
+
+include ':app'

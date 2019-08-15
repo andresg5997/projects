@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!chris.jpg
+!bent.jpg
+!default-avatar.png
+!avery.jpg

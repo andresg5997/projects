@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "443357140337",
+    "firebase_url": "https://reactnative-confusion.firebaseio.com",
+    "project_id": "reactnative-confusion",
+    "storage_bucket": "reactnative-confusion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443357140337:android:c84ed879be6c8134",
+        "android_client_info": {
+          "package_name": "com.confusion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443357140337-qn1rcq80asmjhai6njbhsn9uvtsf8br5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhcrZpw0eGYlijKp0vOmo1MD99HBf9UPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

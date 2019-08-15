@@ -1,0 +1,20 @@
+{
+    "/js/tareas/show.js": "/js/tareas/show.js",
+    "/js/marcas/index.js": "/js/marcas/index.js",
+    "/js/transacciones/create.js": "/js/transacciones/create.js",
+    "/js/marcas/show.js": "/js/marcas/show.js",
+    "/js/usuarios/show.js": "/js/usuarios/show.js",
+    "/js/transacciones/index.js": "/js/transacciones/index.js",
+    "/js/estados/index.js": "/js/estados/index.js",
+    "/js/estados/edit.js": "/js/estados/edit.js",
+    "/js/estados/create.js": "/js/estados/create.js",
+    "/js/config/dashboard.js": "/js/config/dashboard.js",
+    "/js/procesos/index.js": "/js/procesos/index.js",
+    "/js/usuarios/index.js": "/js/usuarios/index.js",
+    "/js/procesos/show.js": "/js/procesos/show.js",
+    "/js/dashboard.js": "/js/dashboard.js",
+    "/js/config/datosAdicionales.js": "/js/config/datosAdicionales.js",
+    "/js/oposiciones/index.js": "/js/oposiciones/index.js",
+    "/js/config/correos/edit.js": "/js/config/correos/edit.js",
+    "/js/config/correos/create.js": "/js/config/correos/create.js"
+}

@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/debug/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "280",
+                        "endColumns": "55",
+                        "endOffsets": "331"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "280",
+                        "endColumns": "55",
+                        "endOffsets": "331"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

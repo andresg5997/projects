@@ -1,0 +1,29 @@
+{
+  "name": "gps_compliance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parallelshell 'lite-server' 'npm run scss'",
+    "scss": "node-sass -w scss/ -o css/",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts && copyfiles fonts/* dist",
+    "usemin": "usemin antecedents.html -d dist --htmlmin -o dist/antecedents.html && usemin assesorament.html -d dist --htmlmin -o dist/assesorament.html && usemin auditoria.html -d dist --htmlmin -o dist/auditoria.html && usemin codietic.html -d dist --htmlmin -o dist/codietic.html && usemin collaboracions.html -d dist --htmlmin -o dist/collaboracions.html && usemin contacta.html -d dist --htmlmin -o dist/contacta.html && usemin cookies.html -d dist --htmlmin -o dist/cookies.html && usemin defense.html -d dist --htmlmin -o dist/defense.html && usemin denuncies.html -d dist --htmlmin -o dist/denuncies.html && usemin express.html -d dist --htmlmin -o dist/express.html && usemin formacio.html -d dist --htmlmin -o dist/formacio.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin pressupost.html -d dist --htmlmin -o dist/pressupost.html && usemin pressupostpetita.html -d dist --htmlmin -o dist/pressupostpetita.html && usemin prevencio.html -d dist --htmlmin -o dist/prevencio.html && usemin previsio.html -d dist --htmlmin -o dist/previsio.html && usemin privacy.html -d dist --htmlmin -o dist/privacy.html && usemin quisom.html -d dist --htmlmin -o dist/quisom.html && usemin serveis.html -d dist --htmlmin -o dist/serveis.html && usemin software.html -d dist --htmlmin -o dist/software.html",
+    "useminpage": "usemin prevencio.html -d dist --htmlmin -o dist/prevencio.html",
+    "imagemin": "imagemin img/* -o dist/img && imagemin img/bg/* -o dist/img/bg",
+    "thisimagemin": "imagemin img/selected/* -o img/selected/output",
+    "build": "npm run imagemin && npm run usemin"
+  },
+  "author": "Andres Urdaneta",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlmin": "0.0.7",
+    "imagemin": "^5.3.1",
+    "imagemin-cli": "^3.0.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.9.0",
+    "parallelshell": "^3.0.2",
+    "usemin": "^0.5.0",
+    "usemin-cli": "^0.5.1"
+  }
+}

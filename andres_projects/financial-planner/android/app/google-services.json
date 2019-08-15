@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "169635626166",
+    "firebase_url": "https://financial-planner-289c1.firebaseio.com",
+    "project_id": "financial-planner-289c1",
+    "storage_bucket": "financial-planner-289c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169635626166:android:7eb0f0c645ebd068",
+        "android_client_info": {
+          "package_name": "com.financialplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169635626166-uv8u9cmleb4d1cii0d8irelaqv1dbvmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkbB4ae2NBseggUGiSD5UlfpOC9ti8w-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+.board {
+  width: 550px;
+  height: 550px;
+  margin: auto auto;
+  background-color: #FFB535; }
+  .board .block {
+    border: 1px solid black;
+    height: 100%; }
+    .board .block p {
+      transition: 0.5s;
+      font-size: 40px;
+      line-heigth: 137.5px;
+      text-align: center; }
+
+.row, .col {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.row {
+  height: 137.5px; }
+
+.col {
+  height: 100%; }

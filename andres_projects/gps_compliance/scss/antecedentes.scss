@@ -1,0 +1,566 @@
+@import "scss/components/main";
+$primary-color: #1C4E5C;
+$primary-color-hover: scale-color($primary-color, $lightness: 32%);
+$color-section-1: #80ADB6;
+$color-section-2: #F2F3F4;
+$color-section-3: #237483;
+$color-section-4: #69A2AC;
+
+body {
+	color: #768390;
+	background: $color-section-1;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+h3 {
+	line-height: initial;
+	white-space: normal;
+	@media (max-width: 767px) {
+		font-size: 24px!important;
+	}
+	@media (min-width: 768px) {
+		line-height: 3rem;
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #3D4351;
+	margin-top: 0;
+}
+a {
+	color: $primary-color;
+	&:hover {
+		color: $primary-color-hover;
+		text-decoration: none;
+	}
+}
+.example-header {
+	background: #3D4351;
+	color: #FFF;
+	font-weight: 300;
+	padding: 3em 1em;
+	text-align: center;
+	h1 {
+		color: #FFF;
+		font-weight: 300;
+		margin-bottom: 20px
+	}
+	p {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 700;
+	}
+}
+.container-fluid {
+	.row {
+		padding: 0 0 4em 0;
+		&:nth-child(odd) {
+			background: #F1F4F5;
+		}
+	}
+}
+
+.example-title {
+	text-align: center;
+	margin-bottom: 60px;
+	padding: 3em 0;
+	border-bottom: 1px solid #E4EAEC;
+	p {
+		margin: 0 auto;
+		font-size: 16px;
+		max-width: 400px;
+	}
+}
+
+/*==================================
+TIMELINE
+==================================*/
+
+/*-- GENERAL STYLES
+------------------------------*/
+.timeline {
+	line-height: 1.4em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	h1, h2, h4, h5, h6 {
+		line-height: inherit;
+	}
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+	padding-left: 40px;
+	position: relative;
+  	@media only screen and (max-width: 767px){
+		margin-top: -1px;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 .5em 0;
+	white-space: nowrap;
+}
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 80px;
+	@media (max-width: 767px) {
+		margin-left: 10vw;
+	}
+	&:before {
+		background: white;
+		border: 3px solid $primary-color;
+		border-radius: 100%;
+		content: "";
+		display: block;
+		height: 60px;
+		width: 60px;
+		position: absolute;
+		top: 0; left: 0;
+		@media (min-width: 768px) {
+			height: 80px;
+			width: 80px;
+		}
+		margin-left: -35px;
+		z-index: 1;
+		transition: background 0.3s ease-in-out,
+		border 0.3s ease-in-out;
+	}
+	&:after {
+		content: "";
+		width: 3px;
+		background: $primary-color;
+		display: block;
+		position: absolute;
+		top: 0; bottom: 0; left: 3px;
+		@media (max-width: 767px) {
+			margin-left: -10px;
+		}
+
+	}
+	.timeline-item:last-child &:after {
+		content: none;
+	}
+}
+.timeline-item:not(.period):hover .timeline-marker:before {
+	background: rgba($primary-color,0.8);
+	border: 3px solid $primary-color;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+	padding-bottom: 40px;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.period {
+	padding: 0;
+	.timeline-info {
+		display: none;
+	}
+	.timeline-marker {
+		&:before {
+			background: transparent;
+			content: "";
+			width: 15px;
+			height: auto;
+			border: none;
+			border-radius: 0;
+			top: 0;
+			bottom: 30px;
+			position: absolute;
+			border-top: 3px solid #CCD5DB;
+			border-bottom: 3px solid #CCD5DB;
+		}
+		&:after {
+			content: "";
+			height: 32px;
+			top: auto;
+		}
+	}
+	.timeline-content {
+		padding: 40px 0 70px;
+	}
+	.timeline-title {
+		margin: 0;
+	}
+}
+
+/*----------------------------------------------
+MOD: TIMELINE SPLIT
+----------------------------------------------*/
+
+.timeline-split {
+	@media (min-width: 768px) {
+		.timeline {
+			display: table;
+		}
+		.timeline-item {
+			display: table-row;
+			padding: 0;
+		}
+		.timeline-info,
+		.timeline-marker,
+		.timeline-content,
+		.period .timeline-info {
+			display: table-cell;
+			vertical-align: top;
+		}
+		.timeline-marker {
+			position: relative;
+		}
+		.timeline-content {
+			padding-left: 30px;
+		}
+		.timeline-info {
+			padding-right: 30px;
+		}
+		.period .timeline-title {
+			position: relative;
+			left: -45px;
+		}
+	}
+}
+
+/*----------------------------------------------
+MOD: TIMELINE CENTERED
+----------------------------------------------*/
+
+.timeline-centered {
+	@extend .timeline-split;
+	@media (min-width: 992px) {
+		&,
+		.timeline-item,
+		.timeline-info,
+		.timeline-marker,
+		.timeline-content {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		.timeline-item {
+			padding-bottom: 40px;
+			overflow: hidden;
+		}
+		.timeline-marker {
+			position: absolute;
+			left: 50%;
+			margin-left: -7.5px;
+		}
+		.timeline-info,
+		.timeline-content {
+			width: 50%;
+		}
+		> .timeline-item:nth-child(even) .timeline-info {
+			float: left;
+			text-align: right;
+			padding-right: 30px;
+			.timeline-title{
+				padding-top: 0.5em;
+				padding-right: 15%;
+				letter-spacing: normal;
+			}
+		}
+		> .timeline-item:nth-child(even) .timeline-content {
+			float: right;
+			text-align: left;
+			padding-left: 30px;
+          	@media only screen and (min-width: 768px){
+          		h3 {
+					padding-left: 15%;
+				    padding-top: 5%;
+				}
+				p {
+					padding-left: 15%;
+				}
+			}
+		}    
+		> .timeline-item:nth-child(odd) .timeline-info {
+			float: right;
+			text-align: left;
+			padding-left: 30px;
+			.timeline-title{
+				padding-top: 0.5em;
+				padding-left: 15%;
+				letter-spacing: normal;
+			}
+		}
+		> .timeline-item:nth-child(odd) .timeline-content {
+			float: left;
+			text-align: right;
+			padding-right: 30px;
+          	@media only screen and (min-width: 768px){
+				h3 {
+					padding-right: 15%;
+				    padding-top: 5%;
+				}
+				p {
+					padding-right: 15%;
+				}
+			}
+		}
+		> .timeline-item.period .timeline-content {
+			float: none;
+			padding: 0;
+			width: 100%;
+			text-align: center;
+		}
+		.timeline-item.period {
+			padding: 50px 0 90px;
+		}
+		.period .timeline-marker:after {
+			height: 30px;
+			bottom: 0;
+			top: auto;
+		}
+		.period .timeline-title {
+			left: auto;
+		}
+	}
+}
+
+/*----------------------------------------------
+MOD: MARKER OUTLINE
+----------------------------------------------*/
+
+.marker-outline {
+	.timeline-marker {
+		&:before {
+			background: transparent;
+			border-color: $primary-color;
+		}
+	}
+	.timeline-item:hover .timeline-marker:before {
+		background: $primary-color;
+	}
+}
+
+/*----------------------------------------------
+CUSTOM CODE
+----------------------------------------------*/
+
+.section-1 {
+	background-color: $color-section-1;
+}
+
+.section-2 {
+	background-color: $color-section-2;
+}
+
+.section-3 {
+	background-color: $color-section-3;
+}
+
+.section-4 {
+	background-color: $color-section-4;
+}
+
+h4.timeline-title {
+	text-align: left;
+	@media (min-width: 768px) {	
+		text-align: right;
+	}
+}
+
+.timeline-item:not(.period):hover .marker-section-1:before {
+    background-color: #30606D!important;
+}
+.marker-section-1 {
+	&:before {
+		background-color: $color-section-1;
+
+	}	
+}
+
+.timeline-item:not(.period):hover .marker-section-2:before {
+    background-color: #466E7A!important;
+}
+.marker-section-2 {
+	&:before {
+		background-color: $color-section-2;
+
+	}	
+}
+
+.timeline-item:not(.period):hover .marker-section-3:before {
+    background-color: $color-section-3!important;
+    border: 3px solid $color-section-4;
+}
+.marker-section-3 {
+	&:before {
+		background-color: $color-section-4!important;
+	    border: 3px solid $color-section-4;
+	}
+	&:after {
+		background-color: $color-section-4;
+	}
+}
+
+.timeline-item:not(.period):hover .marker-section-4:before {
+    background-color: $color-section-4!important;
+    border: 3px solid $color-section-3;
+}
+.marker-section-4 {
+	&:before {
+		background-color: $color-section-3!important;
+	    border: 3px solid $color-section-3;
+	}
+	&:after {
+		background-color: $color-section-3;
+	}
+}
+
+.timeline-item:not(.period):hover .no-dot-1:before {
+	background: $primary-color;
+	border: 0 solid transparent;
+}
+.no-dot-1 {
+	&:before {
+		content: "";
+		width: 3px;
+		background: $primary-color;
+		display: block;
+		position: absolute;
+		border-radius: 0;
+		border: none;
+		margin-top: -4px;
+		margin-left: 3px;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+.timeline-item:not(.period):hover .no-dot-2:before {
+	background: $color-section-4;
+	border: 0 solid transparent;
+}
+.no-dot-2 {
+	&:before {
+		content: "";
+		width: 3px;
+		background-color: $color-section-4!important;
+	    border: 3px solid $color-section-4;
+		display: block;
+		position: absolute;
+		border-radius: 0;
+		border: none;
+		margin-top: -4px;
+		margin-left: 3px;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	&:after {
+		background-color: $color-section-4;
+	}
+}
+
+.timeline-item:not(.period):hover .no-dot-3:before {
+	background: $color-section-3;
+	border: 0 solid transparent;
+}
+.no-dot-3 {
+	&:before {
+		content: "";
+		width: 3px;
+		background-color: $color-section-3!important;
+	    border: 3px solid $color-section-3;
+		display: block;
+		position: absolute;
+		border-radius: 0;
+		border: none;
+		margin-top: -4px;
+		margin-left: 3px;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	&:after {
+		background-color: $color-section-3;
+	}
+}
+
+@media (min-width: 768px) {
+	.image-1 {
+		width: 80%;
+		margin-top: 25%;	
+		margin-left: 20%;
+	}
+}
+
+.image-2 {
+	width: 15%;
+	position: absolute;
+	margin-top: -12%;
+	z-index: 1;
+    margin-left: -50px;
+}
+
+.image-3-right {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.image-3-left {
+    position: absolute;
+    z-index: 1;
+    margin-top: -10%;
+	width: 25%;
+	margin-left: 15%;
+	text-align: left;
+}
+
+.image-4 {
+	img {
+		width: 100.92%;
+		position: absolute;
+		z-index: 1;
+	  	@media only screen and (min-width: 768px){
+			margin-left: -13.5px;
+		}
+	}
+	height: 24vw;
+	margin: 0;
+	margin-top: -1px;
+  	@media only screen and (min-width: 768px){
+		margin-top: -4%;
+	}
+}
+
+.underimage {
+	padding-bottom: 60px!important;
+	margin-top: -60px!important;
+}
+
+.no-margin {
+	margin: 0
+}
+
+.no-padding {
+	padding: 0
+}
+
+@media (max-width: 767px) {
+	.row {
+		margin-bottom: 0;
+	}
+}

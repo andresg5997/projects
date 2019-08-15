@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/index.css">
+
+  </head>
+  <body>
+    <!-- Navbar Dropdown -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <!-- Navbar -->
+    <nav class="nav-center navbar">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo show-on-large"><img src="public/img/logo.png" alt="logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li class="links"><a href="sass.html">HOME</a></li>
+          <li class="links"><a href="badges.html">FACE SPORT</a></li>
+          <li class="links"><a href="collapsible.html">BUSCAR PERFIL</a></li>
+          <li class="links"><a href="collapsible.html">CONTACTO</a></li>
+          <li><a class="dropdown-trigger right" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+    <!-- End Navbar -->
+
+    <!-- Scripts -->
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/materialize.min.js"></script>
+    <script src="/bundle.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.dropdown-trigger').dropdown();
+        $('.sidenav').sidenav();
+      });
+    </script>
+  </body>
+</html>

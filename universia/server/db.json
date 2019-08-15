@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "Andres",
+    "lastName": "Urdaneta",
+    "userType": "player",
+    "username": "andresu",
+    "password": "password",
+    "admin": false,
+    "email": "admin@admin.com",
+    "avatar": "/img/andres.jpg",
+    "sport": "bolas criollas",
+    "height": "1.80m",
+    "weight": "90kg",
+    "birthDate": "2018-05-02T06:10:15.078Z",
+    "nationality": "Venezuelan",
+    "nickname": "er pollito",
+    "position": "el de alante"
+  }
+  ,
+  {
+    "firstName": "Pedro",
+    "lastName": "Pitrelli",
+    "userType": "regular",
+    "username": "pedrop",
+    "password": "password",
+    "admin": false,
+    "email": "regular@email.com",
+    "avatar": "/img/pedro.jpg"
+  }
+  ,
+  {
+    "firstName": "Juana",
+    "lastName": "Roberta",
+    "userType": "juanar",
+    "username": "andresu",
+    "password": "password",
+    "admin": false,
+    "email": "coach@email.com",
+    "avatar": "/img/juana.jpg"
+  }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/mipmap-xhdpi-v4/ic_launcher_round.png",
+        "source": "/home/andres/projects/crab-button/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/home/andres/projects/crab-button/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

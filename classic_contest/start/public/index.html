@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Task 1</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    .cursor-pointer {
+      cursor: pointer;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 border rounded cursor-pointer px-4 mx-2" v-for="(person, index) in allPersons" @click="selectPerson(person)">
+          <p>{{index+1}}. {{person.name}}</p>
+          <p>Father: {{person.father ? person.father : 'None'}}</p>
+          <p>Mother: {{person.mother ? person.mother : 'None'}}</p>
+        </div>
+      </div>
+      <p v-if="selectedPerson">Selected: {{ selectedPerson.name }}</p>
+      <p v-for="name in answer">{{name}}</p>
+      <button class="btn btn-primary" @click="ancestors(null, true)">function A</button>
+    </div>
+  </div>
+  <script src="/js/index/main.js"></script>
+</body>
+</html>

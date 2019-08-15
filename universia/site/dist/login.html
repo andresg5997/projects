@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <form @submit.prevent="submit()">
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="username">Username</label>
+                <input id="username" type="text" v-model="form.username">
+              </div>
+              <div class="input-field col s6">
+                <label for="password">Password</label>
+                <input id="password" type="password" v-model="form.password">
+              </div>
+              <div class="input-field col s6">
+                <select class="browser-default" v-model="form.userType">
+                  <option value="" disabled selected>Choose a user type (regular)</option>
+                  <option value="coach">Coach</option>
+                  <option value="player">Player</option>
+                  <option value="regular">Regular User</option>
+                </select>
+              </div>
+              <div class="input-field col s6">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" v-model="form.firstName">
+              </div>
+              <div class="input-field col s6">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" v-model="form.lastName">
+              </div>
+              <div class="input-field col s6">
+                <label for="email">E-mail</label>
+                <input id="email" type="text" v-model="form.email">
+              </div>
+              <div class="input-field col s6">
+                <label for="avatar">Avatar</label>
+                <input id="avatar" type="text" v-model="form.avatar">
+              </div>
+              <div class="input-field col s6">
+                <button class="btn waves-effect" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+          <p id="result"></p>
+          <div class="row">
+            <div class="col s2">
+              <button class="btn" @click="showData()">Traer data</button>
+            </div>
+            <div class="col s10">
+              <p id="data">Soy data</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/materialize.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

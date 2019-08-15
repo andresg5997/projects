@@ -1,0 +1,1035 @@
+$orange-color: #F99D1B;
+$blue-color: #183C6E;
+$dark-blue: #141E3F;
+$light-gray: #EFF0F1;
+$green-color: #47A92C;
+$padding-top: 73px;
+$cyan-color: #00AEEF;
+
+@font-face {
+    font-family: Orbitron;
+    src: url('../fonts/orbitron-medium.otf');
+}
+
+.orbitron {
+    font-family: Orbitron;
+}
+
+.orbi-sub{
+    font-family: Orbitron;
+    border-bottom: 5px solid #00AEEF;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+@mixin navbar-btn($border, $bgcolor){
+    border: 1px solid $border;
+    background-color: $bgcolor;
+    border-radius: 50px;
+    margin: 4px 10px 0 10px;
+    padding: 0!important;
+    width: 100px;
+    height: 30px;
+    line-height:30px;
+    font-size:14px!important;
+}
+
+@mixin pointy-square($bgcolor){
+    background: url('../img/buttons/' + $bgcolor +'.png') no-repeat center;
+    text-align:center;
+    width:194px !important;
+    height:47px !important;
+}
+
+@mixin grad($start, $end){
+    background: $start;
+    background-image: -webkit-radial-gradient($start, $end); /* Safari 5.1 to 6.0 */
+    background-image: -o-radial-gradient($start, $end); /* For Opera 11.6 to 12.0 */
+    background-image: -moz-radial-gradient($start, $end); /* For Firefox 3.6 to 15 */
+    background-image: radial-gradient($start, $end); /* Standard syntax */
+    padding: 5px 0px;
+    color: white;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+}
+
+/* Buttons */
+
+.button-login{
+    a{
+        @include navbar-btn($blue-color, white);
+        font-weight: 600;
+    }
+}
+
+.button-register{
+    a{
+        @include navbar-btn($blue-color, $blue-color);
+        font-weight: 600;
+        color: white!important;
+    }
+}
+
+.button-donate{
+    a{
+        @include navbar-btn($cyan-color, $cyan-color);
+        // background-color: #00AEEF!important;
+        margin-left:40px;
+        margin-right:100px;
+        color: white !important;
+    }
+}
+
+.button-blue{
+    background: $blue-color;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: white !important;
+    font-size: 80%;
+}
+
+.button-white{
+    @include pointy-square("white");
+    padding: 82px;
+}
+
+.btn-rounded {
+    padding: 8px 55px;
+    background: #D3D6E1;
+    color: $blue-color;
+    border: 1px solid #D3D6E1;
+    border-radius: 20px;
+    font-size: 14px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.index-register{
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* End buttons */
+
+/* Navbar related */
+nav.navbar{
+    background-image: url(../img/backgrounds/navbar.png);
+    background-size: cover;
+    background-position: left bottom;
+}
+
+
+nav .navbar-brand {
+    margin-left: 8%;
+}
+
+.flags{
+    display: flex;
+    align-items: center;
+    & a img{
+        margin-right: 6px;
+        height: 16px;
+    }
+}
+
+.nav-item {
+    background-color: white;
+    text-align: center;
+    .nav-link.active {
+        font-weight: 800;
+        border-top: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-left: 0px solid transparent;
+        border-bottom: 7px solid #F8A736;
+    }
+}
+
+
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active .nav-link {
+    color: $blue-color;
+    font-size: 16px;
+}
+
+.nav-item.active, a.nav-link.dropdown-toggle {
+    font-weight: 700;
+}
+/* End navbar related */
+
+#content {
+    // margin-top: $padding-top;
+}
+
+.intro {
+    padding-top: $padding-top;
+    background: url('../img/backgrounds/home.png') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.intro-login {
+    background: rgba(24,60,110,.8);
+    flex: 1;
+}
+
+.input-group-addon {
+    background: #D3D7E2;
+    outline: 0 !important;
+    border-radius: 0;
+    color: #414587;
+}
+
+input[type="text"].form-control {
+    background: #D3D7E2;
+    border-radius: 0;
+    padding: 10px;
+}
+
+@mixin login-input{
+    padding: 10px 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.login-googleplus {
+    background: #F46741;
+    @include login-input();
+}
+
+.login-facebook {
+    background: #0085C7;
+    @include login-input();
+}
+
+.form-group.login-googleplus i.fa, .form-group.login-facebook i.fa {
+    margin-right: 8px;
+}
+
+.section {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: 1px solid #C9CFD1;
+    border-bottom: 1px solid #C9CFD1;
+    background: url('../img/backgrounds/white-bg.jpg');
+    background-size: cover;
+}
+
+footer {
+    background: url('../img/backgrounds/white-bg2.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dark-blue {
+    background: $dark-blue;
+}
+
+.games-bg{
+    background: url('../img/backgrounds/games-bg.jpg');
+    background-size: cover;
+}
+
+.orange {
+    background: $orange-color;
+    color: white;
+    &:hover {
+        color: floralwhite;
+    }
+}
+
+.blue {
+    background: $blue-color;
+    color: white;
+    &:hover {
+        color: floralwhite;
+    }
+}
+
+.text-dark-blue {
+    color: #395883;
+}
+
+.text-dark-blue-darker {
+    color: $dark-blue;
+}
+
+footer {
+    padding: 20px 0px 0px 0px;
+    // display: flex;
+}
+
+.footer-link{
+    margin-right: 15px;
+    color: #395883;
+}
+
+.divider-blue {
+    border-top: 1px solid #395883;
+}
+
+// Loto
+
+.first {
+    background: $light-gray;
+    padding-top: $padding-top;
+}
+
+.light {
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: .2px;
+    font-size: 90%;
+    line-height: 18px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.green {
+    background: $green-color;
+    color: white;
+}
+
+.blue {
+    background: $blue-color;
+    color: white;
+}
+
+.light-gray {
+    background: $light-gray;
+}
+
+.date-input {
+    background: $light-gray;
+    border-top: 2px solid $blue-color;
+    border-bottom: 2px solid $blue-color;
+    border-left: 2px solid $blue-color;
+    outline: 0;
+    border-radius: 15px 0px 0px 15px;
+    padding: 10px;
+}
+
+.b-0{
+    border: 0;
+}
+
+.flex {
+    flex: 1;
+}
+
+.py-25{
+    padding: 25px 25px !important;
+}
+
+.pagination-badge {
+    padding: 3px 15px;
+    background: $cyan-color;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+.pagination-badge:hover {
+    color: white;
+    text-decoration: none;
+}
+
+ul.paginate {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 300px;
+    text-align:center;
+    font-weight: bold;
+    li {
+        flex: 1;
+    }
+    li a {
+        color: #9DA0A2;
+    }
+    li a:hover{
+        color: #505659;
+        text-decoration: none;
+    }
+    li.active a {
+        color: #505659;
+    }
+}
+
+.cyan {
+    background: $cyan-color;
+}
+
+.logo {
+    width: 240px;
+    margin: 30px 0;
+}
+
+// End Loto
+
+.mx-1px {
+    margin-left: 2px !important;
+    margin-right: 2px;
+}
+
+.btn-group > .btn:first-child{
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.btn-group > .btn:last-child{
+    border-radius: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.btn-group > .btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &:hover {
+        background-color: $orange-color;
+    }
+}
+
+@mixin ball($size, $font-size){
+    color: #212529;
+    width: $size;
+    height: $size;
+    margin: 5px;
+    padding: 10px 0;
+    border-radius: 50%;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+    background-position: center center;
+    background-size: ($size+4) ($size+4) ;
+    font-size: $font-size;
+    font-weight: 100;
+    line-height: $size*0.6;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.media-body {
+    .white-ball {
+        background: url('../img/white-ball.png');
+        @include ball(65px, 28px);
+    }
+    .red-ball {
+        background: url('../img/red-ball.png');
+        @include ball(65px, 28px);
+    }
+    .yellow-ball {
+        background: url('../img/yellow-ball.png');
+        @include ball(65px, 28px);
+    }
+}
+
+.white-ball {
+    background: url('../img/white-ball.png');
+    @include ball(50px, 24px);
+}
+
+.yellow-ball {
+    background: url('../img/yellow-ball.png');
+    @include ball(50px, 24px);
+}
+
+.red-ball {
+    background: url('../img/red-ball.png');
+    @include ball(50px, 24px);
+}
+
+a.download {
+    i.fa {
+        font-size: 48px;
+        margin-right: 15px;
+    }
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.rounded-bg {
+    background: white;
+    font-weight: bold;
+    padding: 5px 50px;
+    border-radius: 15px;
+    color: $blue-color;
+}
+
+.gray {
+    background: #F7F7F7;
+}
+
+.combination-margin{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .combination-margin{
+        padding-left: 0;
+        padding-right: 0;
+    }    
+}
+
+.stadistics{
+    $table-size: 300px;
+    color: black;
+    @mixin text(){
+        font-size: 20px;
+        color: $blue-color;
+        font-weight: 100;
+        text-align: center;
+    }
+    .col-sm-12{
+        p{
+            @include text();
+            margin-top: 20px;
+        }
+    }
+    .vertical{
+        @include text();
+        font-size: 12px;
+        writing-mode: tb-rl;
+        -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform:rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .numbers{
+        padding: 0;
+        .col-sm-12{
+            font-weight: 100;
+            font-size: 22px;
+            color: $blue-color;
+            padding-left: 0;
+            padding-right: 5px;
+            padding-bottom: 0;
+            height: ($table-size/6) * 1 ;
+            padding-top: (($table-size/6) * 1) - 20px;
+            text-align: right;
+        }
+    }
+    .row{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .row{
+            margin: 0;
+            .col-sm-1{
+                padding: 0;
+                color: $blue-color;
+                font-size: 18px;
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+    }
+    .title{
+        font-size: 20px;
+        font-weight: 100;
+        color: $blue-color;
+        line-height: $table-size;
+    }
+    .chart {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(100, 1fr);
+        grid-column-gap: 5px;
+        background: linear-gradient(to bottom, #F7F7F7, #F7F7F7 98%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+        background-size: 100% 50px;
+        background-position: left top;
+        height: $table-size;
+        width: 100%;
+        padding: 5px 0;
+    }
+    [class*="bar"] {
+        width: 40%;
+        box-shadow: 0 -50px rgba(0,174,239, 0.2);
+        margin-bottom: -5px;
+        border-radius: 30px 30px 0 0;
+        transition: all .6s ease;
+        background-color: $cyan-color;
+        grid-row-start: 1;
+        grid-row-end: 101;
+    }
+
+    $totalRows: 101;
+
+    @mixin chartValue($data) {
+        $result: $totalRows - $data;
+        grid-row-start: $result;
+    }
+
+    @for $i from 1 through $totalRows {
+        .bar-#{$i} {
+            @include chartValue($i);
+        }
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .coins-bg{
+        background-size: 45%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-image: url(../img/coins.png);
+    }
+}
+
+.rifa-disponible{
+    padding: 5px 50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    color: $blue-color;
+    font-family: 'Arial';
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Pocket Calculator';
+    src: url('../fonts/pocket_calculator_ot.otf');
+}
+
+.counter{
+    padding-top: 5%;
+    background-image: url('../img/counter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+        .label{
+            padding: 0;
+            font-size: 24px;
+            font-weight: 100;
+            text-align: center;
+            color: white;
+        }
+        #remaining-time{
+            line-height: 0.7;
+            background: -webkit-linear-gradient(#01FF16, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 100;
+            text-align: center;
+            font-size: 84px;
+            font-family: 'Pocket Calculator';
+        }
+        @media only screen and (max-width: 1000px) {
+            #remaining-time{
+                font-size: 30px;
+            }
+            .label{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.input-outline {
+    border: 2px solid $blue-color;
+    border-radius: 45px;
+    padding: 20px 40px;
+    background: transparent;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+}
+
+.login-bg {
+  background: url("../img/backgrounds/login-bg.png") no-repeat center;
+  background-size: cover; 
+}
+
+.login-card {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 3rem 0;
+}
+
+.login-card-border-radius{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.login-card-body{
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.tabs-login{
+  padding-top: 2.5rem!important;
+  padding-bottom: 1.5rem!important;
+  color: #999!important;
+  font-size: 14px;
+  font-weight: 500; 
+}
+
+.captcha{
+  background-image: url('../img/backgrounds/captcha-bg.png');
+  background-size: contain;
+  background-position: center;
+  color: #183C6E;
+  padding: 5px 0;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.login-submit{
+  width: 100%;
+  background-color: #F99D1C;
+  border: 0;
+  padding: 1% 0;
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@mixin user-control($py, $px){
+    background: transparent;
+    border: none; outline: none;
+    border-bottom: 1px solid #d8d8d8;
+    width: 100%;
+    padding: $py $px;
+    font-size: 16px;
+    color: #999;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: #999;
+    }
+}
+
+.login-control {
+    @include user-control(15px, 25px);
+    border-top: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-bottom: 7px solid #F8A736 !important;
+}
+
+.register-control {
+    @include user-control(5px, 0px);
+}
+
+.light-gray-text {
+    color: #d8d8d8;
+}
+
+.form-submit {
+    background: white;
+    color: #999;
+    border: 1px solid #d8d8d8;
+    &:hover {
+        background: floralwhite;
+        cursor: pointer;
+    }
+}
+
+
+.ml-4 {
+    margin-left: 4rem;
+}
+
+.gold-grad::before {
+    @include grad(#FDC217, #FAB932);
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 60%;
+    align-self: flex-start;
+    margin-top: -20px;
+    border: 1px solid #FAB832;
+    border-radius: 0px 0px 60px 60px;
+}
+
+.little-green {
+    background: #00AB60;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 45px;
+}
+
+.policy-box {
+    width: 40%;
+    margin: 0 auto;
+    background: #F99D1C;
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    font-weight: 300;
+    select {
+        background: #FFFFFF;
+        border: none;
+        border-radius: 0;
+        margin: 0px 2px;
+    }
+    input[type="text"] {
+        background: #FFFFFF;
+        border-radius: 0;
+    }
+}
+
+.search-group {
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    .input-group-addon {
+        padding: 15px;
+        background: transparent;
+        border: none;
+        padding-left: 15px;
+        color: rgba(0,0,0,.2);
+    }
+    input.search-input {
+        padding: 15px;
+        width:100%;
+        background: transparent;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.chat-container {
+    // height: 95px;
+    margin-bottom: 12px;
+    .chat-body {
+        border-bottom: 2px solid #C2CACC;
+        width: 100%;
+        span.chat-title{
+            color: #505659;
+            font-weight: 700;
+        }
+        span {
+            color: rgba(0,0,0,.2);
+            font-weight: 700;
+        }
+    }
+    .gray-bordered {
+        border: 2px solid #C2CACC;
+    }
+}
+
+.badge-blue {
+    background: #0086FA;
+    color: white !important;
+    border-radius: 100%;
+    font-size: 12px;
+}
+
+.col-auto[align="center"] {
+    i.fa.fa-download.text-dark-blue {
+        color: #47A92C !important;
+    }
+}
+
+.text-green {
+    color: $green-color !important;
+}
+
+.scrollable-container {
+    overflow-y: scroll;
+    // border: 2px solid black;
+    padding: 15px 5px;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+    background-color: #183C6E;
+    border: 2px solid #183C6E;
+}
+
+.conversation-container {
+    height: 100%;
+    padding: 15px 15px 30px 30px;
+    span.destination {
+        font-weight: 600;
+    }
+    .conversation {
+        margin-top: 30px;
+        font-weight: 600;
+        span.time {
+            font-size: 12px;
+            margin-left: 45px;
+            font-weight: 600;
+            color: #C6CACD;
+            padding-top: 3px;
+        }
+        .received {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            .message-container {
+                display: flex;
+                flex-direction: column;
+                .message-box {
+                    background: #E9E8E7;
+                    padding: 10px 35px 10px 25px;
+                    color: #6D6E71;
+                    margin: 0px 25px;
+                    border-radius: 100px 100px 100px 0px;
+                }
+            }
+            img {
+                float: left;
+                border: 2px solid #ccc;
+            }
+        }
+
+        .sent {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .message-container {
+                display: flex;
+                flex-direction: column;
+                .message-box {
+                    background: #0086FA;
+                    padding: 10px 35px 10px 25px;
+                    border-radius: 100px 100px 0px 100px;
+                    color: white;
+                    margin: 0px 25px;
+                }
+            }
+            img {
+                float: right;
+                border: 2px solid #ccc;
+            }
+        }
+    }
+}
+
+.input-box {
+    background: #E9E8E7;
+    width:100%;
+    padding: 0px 15px;
+    display: flex;
+    align-items:center;
+    height: 10%;
+    .addon-left {
+        border-radius: 15px 0px 0px 15px;
+        background: white;
+        span.fa {
+            color: #C6CACD !important;
+        }
+    }
+    .addon-right {
+        border-radius: 0px 10px 10px 0px;
+        background: white;
+        a {
+            color: #C6CACD !important;
+            font-weight: 600;
+        }
+    }
+    .chat-input {
+        background: white !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        width:100%;
+        border-left: none;
+        border-right: none;
+        &:focus {
+            outline: 0 none;
+        }
+    }
+}
+
+
+.chat-info {
+    background: #F99D1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.9);
+    font-weight: 600;
+    flex-direction: column;
+    padding: 50px;
+    text-align: justify;
+    h3 {
+        font-weight: 600;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.write-dots{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    margin: 0 5px;
+}
+
+.dot-1{
+    opacity: 1.00;
+}
+
+.dot-2{
+    opacity: 0.65;
+}
+
+.dot-3{
+    opacity: 0.30;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

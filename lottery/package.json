@@ -1,0 +1,39 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -w scss/ -o css/",
+    "compile-scss": "node-sass scss/ -o css/",
+    "watch:all": "parallelshell 'npm run scss' 'npm run lite'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts && copyfiles fonts/* dist",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html  && usemin frecuencia-loto.html -d dist --htmlmin -o dist/frecuencia-loto.html  && usemin frecuencia-pega-3.html -d dist --htmlmin -o dist/frecuencia-pega-3.html  && usemin frecuencia-pega-4-real.html -d dist --htmlmin -o dist/frecuencia-pega-4-real.html  && usemin frecuencia-loto-pool.html -d dist --htmlmin -o dist/frecuencia-loto-pool.html && usemin frecuencia-loto-real.html -d dist --htmlmin -o dist/frecuencia-loto-pool-real.html && usemin combinaciones-loto-pool.html -d dist --htmlmin -o dist/combinaciones-loto-pool.html && usemin combinaciones-loto-real.html -d dist --htmlmin -o dist/combinaciones-loto-real.html && usemin combinaciones-loto.html -d dist --htmlmin -o dist/combinaciones-loto.html && usemin combinaciones-pega-3.html -d dist --htmlmin -o dist/combinaciones-pega-3.html && usemin combinaciones-pega-4-real.html -d dist --htmlmin -o dist/combinaciones-pega-4-real.html && usemin login.html -d dist --htmlmin -o dist/login.html && usemin donate.html -d dist --htmlmin -o dist/donate.html && usemin privacy.html -d dist --htmlmin -o dist/privacy.html && usemin rifa.html -d dist --htmlmin -o dist/rifa.html && usemin chat.html -d dist --htmlmin -o dist/chat.html",
+    "imagemin": "imagemin img/* -o dist/img && imagemin img/backgrounds/* -o dist/img/backgrounds && imagemin img/buttons/* -o dist/img/buttons && imagemin img/flags/* -o dist/img/flags",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "author": "Andres Urdaneta",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "lite-server": "^2.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "htmlmin": "0.0.7",
+    "imagemin": "^5.3.1",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^4.8.3",
+    "onchange": "^3.2.1",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
+}

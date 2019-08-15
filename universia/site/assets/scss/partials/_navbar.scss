@@ -1,0 +1,28 @@
+// Center Links
+nav.nav-center ul {
+    text-align: center;
+	li.links {
+	    display: inline;
+	    float: none;
+		a {
+	    	display: inline-block;
+		}
+	}
+}
+// End Center Links
+
+nav.navbar {
+	background-image: url('/public/img/bg/navbar.png');
+	background-color: #363573;
+}
+
+nav.navbar ul li a {
+	font-size: 12px;
+}
+
+nav.navbar .brand-logo {
+	padding-left: 4rem;
+	img {
+		width: 60%;
+	}
+}

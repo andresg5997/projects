@@ -1,0 +1,4 @@
+export const FETCH_COUNTER = 'FETCH_COUNTER';
+export const SET_COUNTER = 'SET_COUNTER';
+export const FETCH_CATEGORIES = 'FETCH_CATEGORIES';
+export const ADD_CATEGORY = 'ADD_CATEGORY';

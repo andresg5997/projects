@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">537221564998-cndp4uoc9tjatph7v2bc617h5o9l4ijk.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pharmacy-qr.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">537221564998</string>
+    <string name="google_api_key" translatable="false">AIzaSyDGZPd3MKon99yLZGkzMl1Bb50-4VeV18M</string>
+    <string name="google_app_id" translatable="false">1:537221564998:android:0c417a8825d81551</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDGZPd3MKon99yLZGkzMl1Bb50-4VeV18M</string>
+    <string name="google_storage_bucket" translatable="false">pharmacy-qr.appspot.com</string>
+    <string name="project_id" translatable="false">pharmacy-qr</string>
+</resources>

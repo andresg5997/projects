@@ -1,0 +1,55 @@
+.indicator{
+    background-color: #2196F3!important;
+}
+input[type=range]+.thumb {
+	background-color: #2196F3;
+}
+.full-height{
+	height: 100%!important;
+}
+.row{
+	margin-bottom: 0!important;
+}
+.grad-left {
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(13,71,161,1),white); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(13,71,161,1),white); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(13,71,161,1),white); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(13,71,161,1), white); /*Standard*/
+}
+.grad-right {
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,white,rgba(13,71,161,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,white,rgba(13,71,161,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,white,rgba(13,71,161,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,white,rgba(13,71,161,1)); /*Standard*/
+}
+@media only screen and (min-width: 968px) {
+	.white-responsive{
+		background-color:white;
+	}
+}
+@media only screen and (max-width: 968px) {
+	.white-responsive{
+		background-color:rgb(13,71,161);
+	}
+}
+.nav-content{
+  width: 35%;
+}
+.nav-grad{
+  width: 5%;
+}
+.table-component__table-wrapper{
+  overflow:visible!important;
+}
+.dropdown-content {
+   overflow-y: visible;
+}
+.dropdown-content .dropdown-content {
+   margin-left: -100%;
+}
+
+.dropdown-content.select-dropdown {
+  overflow: auto!important;
+}

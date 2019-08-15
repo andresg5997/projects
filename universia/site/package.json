@@ -1,0 +1,40 @@
+{
+  "name": "universia",
+  "version": "0.1.0",
+  "description": "Universia Sports Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server",
+    "start": "parallelshell 'npm run scss' 'npm run lite' 'webpack --watch'",
+    "webpack": "webpack",
+    "lite": "lite-server",
+    "scss": "node-sass -w assets/scss/ -o public/css/",
+    "build": "webpack"
+  },
+  "keywords": [
+    "universia",
+    "sports"
+  ],
+  "author": "Andres Urdaneta",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "lite-server": "^2.3.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.8.3",
+    "parallelshell": "^3.0.2",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.2",
+    "npm": "^5.8.0",
+    "vue": "^2.5.16",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

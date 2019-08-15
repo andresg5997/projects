@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2d059b81e8fadead96ce6df07f59dda8/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

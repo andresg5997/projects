@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/emmanuel/personal/MoneyCome/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/emmanuel/personal/MoneyCome/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/emmanuel/personal/money-manager-app/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/emmanuel/personal/money-manager-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/andres/projects/money-manager-app/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/andres/projects/money-manager-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    }
+]

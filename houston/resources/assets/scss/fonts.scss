@@ -1,0 +1,105 @@
+$gray-color: #333333;
+$light-green: #679B45;
+$dark-green: #018042;
+
+@font-face {
+    font-family: Bebas;
+    src: url('/fonts/BebasNeue-Bold.otf');
+}
+
+@font-face {
+    font-family: Kurale;
+    src: url('/fonts/Kurale-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway Bold;
+    src: url('/fonts/Raleway-Bold_0.ttf');
+}
+
+@font-face {
+    font-family: Raleway Italic;
+    src: url('/fonts/Raleway-Italic.ttf');
+}
+
+@font-face {
+    font-family: Raleway Medium;
+    src: url('/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('/fonts/Raleway-Regular_0.ttf');
+}
+
+@font-face {
+    font-family: Raleway Semibold;
+    src: url('/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Raleway Semibold Italic;
+    src: url('/fonts/Raleway-SemiBoldItalic.ttf');
+}
+
+
+.index-header {
+    font-family: Kurale;
+}
+
+.team-name {
+    font-family: Raleway Semibold Italic;
+    font-size: 26px;
+    color: black;
+    // font-weight: bold;
+    font-style: italic;
+    padding: 0px 0px 30px 0px;
+}
+
+.team-sport {
+    font-family: Raleway;
+    color: black !important;
+    font-style: italic;
+    font-size: 22px;
+    padding: 0px 0px 30px 0px !important;
+}
+
+.team-name a {
+    color: black !important;
+}
+
+body, html {
+    font-family: Raleway;
+    color: $gray-color;
+    font-size: 16px;
+}
+
+th {
+    font-family: Raleway Bold;
+}
+
+.team-description {
+    color: $gray-color;
+}
+
+a {
+    color: $dark-green;
+    font-family: Raleway;
+}
+
+a:hover {
+    color: $dark-green;
+}
+
+.dashboard-title {
+    font-family: Kurale;
+    font-size: 48px;
+}
+
+.card-header h6 {
+    color: black;
+}
+
+.kurale {
+    font-family: Kurale;
+}

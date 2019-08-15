@@ -1,0 +1,104 @@
+.intro {
+  background-image: url("/img/bg/compliance_penal.png"); }
+
+#empresa-section-separator {
+  background-color: #4B8A9C;
+  height: 60px;
+  line-height: 60px; }
+  #empresa-section-separator .nav-wrapper .brand-logo img {
+    height: 56px;
+    opacity: 1;
+    z-index: 40; }
+    @media only screen and (min-width: 601px) {
+      #empresa-section-separator .nav-wrapper .brand-logo img {
+        margin: -10px;
+        height: 80px;
+        margin-left: 0; } }
+  #empresa-section-separator .nav-wrapper #nav-mobile li a {
+    height: 60px;
+    line-height: 60px;
+    font-weight: lighter; }
+    #empresa-section-separator .nav-wrapper #nav-mobile li a:hover {
+      background-color: none; }
+
+#empresa-section {
+  background-color: #81ADB9; }
+  @media only screen and (max-width: 600px) {
+    #empresa-section img {
+      margin: 0 auto; } }
+  @media only screen and (min-width: 601px) {
+    #empresa-section img {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(25%);
+      -ms-transform: translateY(25%);
+      transform: translateY(25%); } }
+  #empresa-section .antecedents-btn {
+    background-color: rgba(220, 220, 220, 0.4);
+    box-shadow: none;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 16px 24px 16px 24px;
+    height: 100%;
+    border-radius: 8px; }
+    #empresa-section .antecedents-btn:hover {
+      background-color: rgba(220, 220, 220, 0.8); }
+    #empresa-section .antecedents-btn:focus {
+      background-color: rgba(220, 220, 220, 0.8); }
+
+#sgpc-section {
+  background-color: #1C4E5C;
+  padding-top: 7em;
+  padding-bottom: 9em; }
+  @media only screen and (min-width: 601px) {
+    #sgpc-section {
+      background-image: url("/img/03-02.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 50%; } }
+
+#colaterals-section {
+  background-color: #E4EEF0;
+  padding-top: 3em; }
+  @media only screen and (min-width: 601px) {
+    #colaterals-section .dashed-list {
+      margin-left: 5em; } }
+
+#fases-section {
+  background-color: #EEF4F5; }
+  @media only screen and (min-width: 601px) {
+    #fases-section {
+      padding-left: 4em;
+      padding-right: 4em; } }
+  #fases-section .card {
+    background-color: #C9D8DB;
+    border-radius: 35px;
+    margin-left: 1em;
+    margin-right: 1em; }
+    #fases-section .card .card-content .img-center {
+      height: 8em; }
+    #fases-section .card .card-content .card-title {
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px; }
+    #fases-section .card .card-content .card-text {
+      text-align: justify;
+      font-size: 14px;
+      line-height: 1.2em; }
+      @media only screen and (min-width: 601px) {
+        #fases-section .card .card-content .card-text {
+          font-size: 12px;
+          height: 190px; } }
+    #fases-section .card .card-content .more-btn {
+      background-color: rgba(75, 138, 156, 0.4);
+      box-shadow: none;
+      font-size: 15px;
+      font-weight: lighter;
+      padding: 15px 22.5px 15px 22.5px;
+      height: 100%;
+      border-radius: 7.5px;
+      line-height: 25px; }
+      #fases-section .card .card-content .more-btn:hover {
+        background-color: rgba(75, 138, 156, 0.8); }
+      #fases-section .card .card-content .more-btn:focus {
+        background-color: rgba(75, 138, 156, 0.8); }

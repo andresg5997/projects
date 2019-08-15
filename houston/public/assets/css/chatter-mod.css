@@ -1,0 +1,34 @@
+#chatter .left-column .nav-pills > li {
+    margin-top: 0px;
+    -webkit-transition: padding-left .4s;
+    transition: padding-left .4s;
+}
+#chatter .left-column .nav-pills > li > a {
+    border-bottom: 1px dotted #d7d7d7;
+    padding: 10px 40px;
+    margin-top: 0px;
+    color: #69707a;
+    font-weight: 400;
+}
+#chatter .left-column .nav-pills > li:hover {
+    background-color: #f5f7fa;
+    padding-left: 10px;
+}
+.panel, .conversation {
+    background: -webkit-linear-gradient(left,#f9f9f9,#fff 20px);
+    background: linear-gradient(90deg,#f9f9f9,#fff 20px);
+    padding-left: 3em;
+}
+#chatter .left-column .nav-pills > li > a .chatter-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    left: 5px;
+    top: 15px;
+}
+#chatter .conversation {
+    border-bottom: 1px dotted #d7d7d7;
+}
+#new_response {
+    padding-top: 40px;
+}

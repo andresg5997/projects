@@ -1,0 +1,31 @@
+$board-size: 550px;
+
+.board {
+	width: $board-size;
+	height: $board-size;
+	margin: auto auto;
+	background-color: #FFB535;
+	.block {
+		border: 1px solid black;
+		height: 100%;
+		p {
+			transition: 0.5s;
+			font-size: 40px;
+			line-heigth: $board-size / 4;
+			text-align: center;
+		}
+	}
+}
+
+.row, .col {
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.row {
+	height: $board-size / 4;
+}
+
+.col {
+	height: 100%;
+}

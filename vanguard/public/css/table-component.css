@@ -1,0 +1,98 @@
+*,
+*:after,
+*:before {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.table-component {
+  display: flex;
+  flex-direction: column;
+  margin: 4em 0;
+}
+
+.table-component__table-wrapper {
+  overflow-x: auto;
+  margin: 1em 0;
+  width: 100%;
+  border: solid 1px #ddd;
+  border-bottom: none;
+}
+
+.table-component__table {
+  min-width: 100%;
+  border-collapse: collapse;
+  border-bottom: solid 1px #ddd;
+  table-layout: fixed;
+}
+
+.table-component__table__caption {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.table-component__table th,
+.table-component__table td {
+  padding: .75em 1.25em;
+  vertical-align: top;
+  text-align: left;
+}
+
+.table-component__table th {
+  background-color: #eee;
+  color: #333;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: .85em;
+}
+
+table.table-component__table > tbody > tr {
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+}
+
+table.table-component__table > tbody > tr:hover {
+  background-color: #f2f2f2;
+}
+
+.table-component__table a {
+  color: #007593;
+}
+
+.table-component__message {
+  color: #999;
+  font-style: italic;
+}
+
+.table-component__th--sort,
+.table-component__th--sort-asc,
+.table-component__th--sort-desc {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.table-component__th--sort-asc:after,
+.table-component__th--sort-desc:after {
+  position: absolute;
+  left: .25em;
+  display: inline-block;
+  color: #000;
+}
+
+.table-component__th--sort-asc:after {
+  content: '↑';
+}
+
+.table-component__th--sort-desc:after {
+  content: '↓';
+}

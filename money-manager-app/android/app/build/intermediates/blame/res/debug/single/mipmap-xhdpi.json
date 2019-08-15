@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/emmanuel/personal/money-manager-app/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/emmanuel/personal/money-manager-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/emmanuel/personal/MoneyCome/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/emmanuel/personal/MoneyCome/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/andres/projects/money-manager-app/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/andres/projects/money-manager-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

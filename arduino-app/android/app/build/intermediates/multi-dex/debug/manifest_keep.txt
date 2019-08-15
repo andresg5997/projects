@@ -1,0 +1,3 @@
+# Referenced at /home/andres/projects/arduino-app/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17
+-keep class com.arduinoapp.MainApplication { <init>(...); }
+

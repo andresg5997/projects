@@ -1,0 +1,26 @@
+<?php
+    return [
+    'create_event'          => 'Create event',
+    'new_location'          => 'New Location',
+    'date_time'             => 'Date',
+    'end_date_time'         => 'End date',
+    'new_location'          => 'New location\'s name',
+    'add_new_location'      => 'Add new location',
+    'choose_uniform'        => 'Choose an uniform',
+    'send_reminder'         => 'Send reminder to members',
+    'days_before'           => 'day(s) before start date.',
+    'name_event'            => 'Name your event',
+    'repeat'                => 'Repeat',
+    'field_required'        => 'This field is required.',
+    'repeatDate_required'   => 'This date is required.',
+    'select_team'           => 'Select a team',
+    'insert_name'           => 'Insert team\'s name',
+    'show_event'            => 'View event',
+    'time'                  => 'Time',
+    'endTime'               => 'End time',
+    'download_calendar'     => 'Export the event to your desired calendar!',
+    'edit'                  => 'Edit event',
+    'update_event'          => 'Update event',
+    'at'                    => 'At',
+    'notes'                 => 'Notes'
+    ];

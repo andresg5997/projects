@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/3676f25a4ac2ebed8686686ab74cf189/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/3676f25a4ac2ebed8686686ab74cf189/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/3676f25a4ac2ebed8686686ab74cf189/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/andres/projects/pharmacy-qr/android/app/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/a8f4c8e3fb294430d8c17c606f1bda9d/res/color/abc_search_url_text.xml"
+    }
+]

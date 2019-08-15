@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/aa2e8c237e601b298def3103fd3dd59c/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3c88b9166c17b449b29dd0c8603db0c0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/aa2e8c237e601b298def3103fd3dd59c/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/andres/projects/crab-button/android/app/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/andres/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/aa2e8c237e601b298def3103fd3dd59c/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

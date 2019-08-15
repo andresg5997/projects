@@ -1,0 +1,39 @@
+WRONG
+
+axios.post('https://my.example.org/myapi/meta?uname=' + uname + '&umetaid=' + post.umeta_id + '&umetavalue=' + post.meta_value, {
+          withCredentials: true,
+          headers: { 'Authorization': 'Bearer ' + mytoken }
+        })
+     .then(function (response) {
+       console.log(response)
+     })
+     .catch(function (error) {
+       console.log(error)
+     })
+
+RIGHT
+
+Axios Post request assumes that the second parameter is data and third parameter is config.
+
+Axios Get request assumes that the second parameter is config while the data is appended in URL.
+
+You are sending data in the url which should be as second parameter(For POST request).
+
+Code Should be:
+
+var data = { 
+  'uname': uname,
+  'umetaid': post.umeta_id,
+  'umetavalue': post.meta_value
+}
+var headers = {
+  withCredentials: true,
+  headers: { 'Authorization': 'Bearer ' + mytoken }
+}
+axios.post('https://my.example.org/myapi/meta',data,headers)
+ .then(function (response) {
+   console.log(response)
+ })
+ .catch(function (error) {
+   console.log(error)
+ })

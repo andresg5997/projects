@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>2048</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="app">
+    <div class="board">
+
+      <div class="row">
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.a1 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.a2 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.a3 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.a4 }} </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.b1 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.b2 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.b3 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.b4 }} </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.c1 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.c2 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.c3 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.c4 }} </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.d1 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.d2 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.d3 }} </p>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="block">
+            <p> {{ block.d4 }} </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/game.js"></script>
+</html>

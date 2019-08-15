@@ -1,0 +1,1 @@
+{!! config('media_index_page_main_ad_slot') !!}

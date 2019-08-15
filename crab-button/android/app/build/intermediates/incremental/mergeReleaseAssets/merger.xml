@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config=":react-native-sound"><source path="/home/andres/projects/crab-button/node_modules/react-native-sound/android/build/intermediates/packagedAssets/release"/></dataSet><dataSet config="main"><source path="/home/andres/projects/crab-button/android/app/src/main/assets"/><source path="/home/andres/projects/crab-button/android/app/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/home/andres/projects/crab-button/android/app/src/release/assets"/></dataSet></merger>
